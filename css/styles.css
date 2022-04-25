@@ -56,7 +56,7 @@ body {
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  background-color: pink;
+  background-color: #f78c8cfa;
   color: #fff;
 }
 
@@ -68,7 +68,7 @@ img {
 /* CONTAINER */
 .container {
   width: 100%;
-  max-width: 1140px;
+  max-width: 790px;
   padding-left: 20px;
   padding-right: 20px;
   margin-left: auto;
@@ -77,6 +77,136 @@ img {
 
 /* MAIN CONTENT */
 
-.main-content {
+.main-section {
   flex-grow: 1;
+}
+
+.main-content {
+  padding-top: 30px;
+  padding-bottom: 70px;
+}
+.fabric-types-list {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-bottom: 15px;
+}
+.fabric-type-item {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 60px;
+
+}
+.fabric-type-item:not(:last-child) {
+  margin-right: 30px;
+}
+.fabric-type-item-link {
+  text-decoration: none;
+  opacity: 0.6;
+  color: #fff;
+}
+.fabric-type-item-link-active{
+  opacity: 1;
+}
+.fabric-type-item-link:hover{
+  opacity: 1;
+}
+.fabric-type-item-link:active{
+  opacity: 0.8;
+}
+.fabric-info{
+  font-weight: 300;
+  font-size: 14px;
+  margin-top: 0;
+  max-width: 500px;
+  margin-bottom: 40px;
+}
+.washing-mode{
+  position: relative;
+
+}
+.washing-mode-info {
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+.washing-mode-info-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center ;
+  width: 250px;
+  height: 250px;
+  padding: 30px;
+}
+dt {
+  color: darksalmon;
+  margin: 0;
+  font-weight: 500;
+  font-size: 20px;
+}
+dd {
+  margin: 0;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 2;
+}
+.time {
+  background-color: #555;
+}
+.temperature {
+  background-color: #333;
+}
+.load {
+  background-color: #111;
+}
+.button {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  padding: 0;
+  border: 0;
+  background-color: #fff;
+  opacity: 0.7;
+  cursor: pointer;
+}
+.button:hover {
+  opacity: 0.9;
+}
+.button-next {
+  right: 0;
+  transform: translateX(100%);
+  top: 0;
+
+}
+.button-prev {
+  left: 0;
+  top: 0;
+  transform: translateX(-100%);
+}
+.button-img {
+  display: block;
+  width: 48px;
+  height: 48px;
+  display: block;
+  margin-right: 0;
+}
+.button-start {
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  width: 210px;
+  padding: 15px;
+  border: 0;
+  border-radius: 5px;
+  background-color: #111;
+  color: #fff;
+  font-weight: 400;
+  font-size: 18px;
+  transform: translateY(50%);
+  transition: transform 0.4s ease;
+}
+.button-start:hover {
+  transform: translateY(40%);
 }
